@@ -9,7 +9,6 @@ const ProfilePic = ({ editing }) => {
     // console.log(e);
     const reader = new FileReader();
     reader.onload = () => {
-      console.log("bol skte hai");
       if (reader.readyState === 2) {
         setimageSrc(reader.result);
       }
